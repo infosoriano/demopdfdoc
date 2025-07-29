@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/ecografia.png">
+    <title>Eco. Ginecológica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Informe de Histeroscopia</h1>
+            <h2>Dr. Emilio ROSSO</h2>
+        </header>
+        <form id="histeroscopiaForm">
+            <div class="form-horizontal">
+            <h3>Datos del Paciente y Estudio</h3>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label for="cedula">Cedula:</label>
+                            <input type="text" id="cedula" name="cedula" required placeholder="Cedula">
+                        </div>
+                    </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required placeholder="Texto">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Texto">
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="edad">Edad:</label>
+                        <input type="text" id="edad" name="edad" required placeholder="Números">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="fum">FUM:</label>
+                        <input type="date" id="fum" name="fum" required>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="dia_ciclo">Día del Ciclo:</label>
+                        <input type="text" id="dia_ciclo" name="dia_ciclo" required placeholder="Días">
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="ag">A.G.::</label>
+                        <input type="text" id="ag" name="ag" required placeholder="Texto">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="procedencia">Procedencia:</label>
+                        <input type="text" id="procedencia" name="procedencia" required placeholder="Texto">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="medTratante">Médico Tratante:</label>
+                        <input type="text" id="medTratante" name="medTratante" required placeholder="Dr. N. Apellido">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="indicacion">Indicación:</label>
+                        <input type="text" id="indicacion" name="indicacion" required placeholder="Texto">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="procedimiento">Procedimiento:</label>
+                        <input type="text" id="procedimiento" name="procedimiento" required placeholder="Procedimiento">
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="form-group">
+                        <label for="anestesia">Anestesia:</label>
+                        <input type="text" id="anestesia" name="anestesia" required placeholder="Si / No">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="distension">Distensión:</label>
+                        <input type="text" id="distension" name="distension" required placeholder="Distensión">
+                    </div>
+                </div>
+            </div>
+            <h3>Hallazgos Histeroscopicos</h3>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="dilCervical">Dilatación Cervical:</label>
+                        <input type="text" id="dilCervical" name="dilCervical" required placeholder="Dilatación Cerv.">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="vaginoscopia">Vaginoscopía:</label>
+                        <input type="text" id="vaginoscopia" name="vaginoscopia" required placeholder="Vaginoscopía">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="exocervix">Exocervix:</label>
+                        <input type="text" id="exocervix" name="exocervix" required placeholder="Exocervix">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="canal_cervical">Canal Cervical:</label>
+                        <input type="text" id="canal_cervical" name="canal_cervical" required placeholder="Canal Cervical">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="cavidad_uterina">Cavidad Uterina:</label>
+                        <input type="text" id="cavidad_uterina" name="cavidad_uterina" required placeholder="Cavidad Uterina">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="tamanio_uterina">Tamaño:</label>
+                        <input type="text" id="tamanio_uterina" name="tamanio_uterina" required placeholder="Tamaño">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="forma_uterina">Forma:</label>
+                        <input type="text" id="forma_uterina" name="forma_uterina" required placeholder="Forma Uterina">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="cuernos_uterina">Cuernos:</label>
+                        <input type="text" id="cuernos_uterina" name="cuernos_uterina" required placeholder="Cuernos">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="ostiums_uterina">Ostiums:</label>
+                        <input type="text" id="ostiums_uterina" name="ostiums_uterina" required placeholder="Ostiums">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="endometrio_uterina">Endometrio:</label>
+                        <input type="text" id="endometrio_uterina" name="endometrio_uterina" required placeholder="Endometrio">
+                    </div>
+                </div>
+            </div>
+            <h3>Diagnosticos</h3>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="procedimiento_terapeutico">Procedimiento Terapeutico:</label>
+                        <input type="text" id="procedimiento_terapeutico" name="procedimiento_terapeutico" required placeholder="Procedimiento Terapeutico">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="anatomiapatologica">Anatomia Patologica:</label>
+                        <input type="text" id="anatomiapatologica" name="anatomiapatologica" required placeholder="Anatomia Patologica">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="complicaciones">Complicaciones:</label>
+                        <input type="text" id="complicaciones" name="complicaciones" required placeholder="Complicaciones">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="tolerancia">Tolerancia:</label>
+                        <input type="text" id="tolerancia" name="tolerancia" required placeholder="Tolerancia">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea id="comentarios" name="comentarios" rows="5" required placeholder="Comentarios con maximo cinco lineas de texto"></textarea>
+                    </div>
+                </div>
+            </div>
+            <!--div class="row">
+                <div class="col-sm-3">
+                    <div class="form-group-medico">
+                        <label class="control-label" for="medico">Seleccione el Médico:</label>
+                        <select name="medico" id="medico">
+                            <option value="">Seleccione una Firma</option hidden>
+                            <option value="dorner.png">Dra. C.Dorner</option>
+                        </select>
+                    </div>
+                </div>
+            </div-->
+        </br>
+            <button type="button" onclick="generatePDF()">Generar PDF</button>
+        </form>
+    </div>
+    <script src="js/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+/* styles.css */
+
+body {
+    background-color: #e3fafc;
+    font-family: 'Arial', sans-serif;
+    color: #005c68;
+}
+
+header {
+    background-color: #00bcd4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+label {
+    font-weight: bold;
+    color: #004d40;
+}
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #004d40;
+    padding: 10px;
+    background-color: #e0f2f1;
+    color: #004d40;
+    margin-bottom: 10px;
+    width: 100%;
+}
+input, textarea, select {
+    border-radius: 5px;
+    border: 1px solid #004d40;
+    padding: 10px;
+    background-color: #e0f2f1;
+    color: #004d40;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #00acc1;
+    box-shadow: 0 0 5px #00acc1;
+}
+
+button {
+    background-color: #00acc1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #00838f;
+}
+
+textarea {
+    resize: none;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+}
+
+/* Ajuste específico para las etiquetas y los inputs/textarea debajo de los textos */
+.form-group textarea {
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
